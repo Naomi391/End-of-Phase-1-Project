@@ -152,3 +152,42 @@ footer {
   border-radius: 50%;
   margin-right: 10px;
 }
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  color: #fff;
+  margin-right: 10;
+}
+
+#helmet {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.approvalCard {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 15px;
+  width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.approvalContainer {
+  border: 2px solid #ddd; /* Set border color and width as needed */
+  border-radius: 10px; /* Adjust border radius for rounded corners */
+  overflow: hidden; /* Ensure the border is visible */
+  display: flex;
+  align-items: center;
+}

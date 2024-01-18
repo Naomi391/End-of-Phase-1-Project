@@ -6,8 +6,6 @@ function contractors() {
 
     const servicesLink = document.getElementById("servicesLink");
 
-    const contactLink = document.getElementById("contactLink");
-
     const newsLink = document.getElementById("newsLink");
 
     approvedContractorsLink.addEventListener("click", function (event) {
@@ -25,8 +23,6 @@ function contractors() {
       window.location.href = "news.html";
     });
 
-   
-
     if (window.location.pathname.includes("contractors.html")) {
       contractorsFetch();
     }
@@ -37,10 +33,6 @@ function contractors() {
 
     if (window.location.pathname.includes("news.html")) {
       getNews();
-    }
-
-    if (window.location.pathname.includes("contact.html")) {
-      contactUs();
     }
 
     function contractorsFetch() {
@@ -226,6 +218,7 @@ function contractors() {
 
           articles.forEach((article) => {
             const card = document.createElement("div");
+            card.classList.add("news");
 
             card.innerHTML = `
             <div class="newsCard">
