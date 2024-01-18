@@ -8,6 +8,8 @@ function contractors() {
 
     const newsLink = document.getElementById("newsLink");
 
+    const ourcompanyLink = document.getElementById("ourcompanyLink");
+
     approvedContractorsLink.addEventListener("click", function (event) {
       event.preventDefault();
       window.location.href = "contractors.html";
@@ -148,7 +150,8 @@ function contractors() {
         },
       ];
 
-      pendingApprovalsContainer.innerHTML = "<h2>Pending Approvals</h2>";
+      pendingApprovalsContainer.innerHTML =
+        "<h2 class='pendingApp'>Pending Approvals</h2>";
 
       pendingApprovals.forEach((approval) => {
         const approvalCard = document.createElement("div");
@@ -165,6 +168,7 @@ function contractors() {
             </div>
           </div>
         `;
+
         const verifiedStepsCount = approval.reasons.filter(
           (reason) => reason.verified
         ).length;
@@ -172,6 +176,7 @@ function contractors() {
           const almostVerifiedMessage = document.createElement("p");
           almostVerifiedMessage.textContent =
             "Your company is almost verified ! Hang in there !";
+          almostVerifiedMessage.classList.add("almostVerified");
           approvalCard.appendChild(almostVerifiedMessage);
         }
         pendingApprovalsContainer.appendChild(approvalCard);
@@ -218,7 +223,6 @@ function contractors() {
 
           articles.forEach((article) => {
             const card = document.createElement("div");
-            card.classList.add("news");
 
             card.innerHTML = `
             <div class="newsCard">
