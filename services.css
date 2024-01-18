@@ -8,6 +8,7 @@ html {
 
 body {
   overflow-y: scroll;
+  margin-bottom: 100px;
 }
 
 .video-background {
@@ -18,7 +19,6 @@ body {
   height: 100%;
   object-fit: cover; /* Ensure the video covers the entire container */
   z-index: -1; /* Place the video behind other elements */
-  margin-bottom: 60px;
 }
 
 header {
@@ -118,6 +118,7 @@ nav a:hover {
   margin: 5px 0;
 }
 
+/* Add these styles to your existing CSS file */
 
 footer {
   background-color: #636060;
@@ -150,28 +151,4 @@ footer {
   height: auto;
   border-radius: 50%;
   margin-right: 10px;
-}
-
-.viewButton {
-  background-color: #3498db; /* Set the background color */
-  color: #fff; /* Set the text color */
-  padding: 10px 15px; /* Adjust padding as needed */
-  font-size: 14px; /* Adjust font size as needed */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Add border-radius for rounded corners */
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
-}
-
-.viewButton:hover {
-  background-color: #2980b9; /* Change background color on hover */
-}
-
-.logo {
-  font-family: "Arial", sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  color: #fff;
-  margin-left: 20px;
-  text-transform: uppercase;
 }

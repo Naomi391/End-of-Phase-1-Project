@@ -18,7 +18,6 @@ body {
   height: 100%;
   object-fit: cover; /* Ensure the video covers the entire container */
   z-index: -1; /* Place the video behind other elements */
-  margin-bottom: 60px;
 }
 
 header {
@@ -84,7 +83,6 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-  margin-bottom: 60px;
 }
 .contractorCard {
   background-color: #fff;
@@ -118,6 +116,7 @@ nav a:hover {
   margin: 5px 0;
 }
 
+/* Add these styles to your existing CSS file */
 
 footer {
   background-color: #636060;
@@ -152,26 +151,31 @@ footer {
   margin-right: 10px;
 }
 
-.viewButton {
-  background-color: #3498db; /* Set the background color */
-  color: #fff; /* Set the text color */
-  padding: 10px 15px; /* Adjust padding as needed */
-  font-size: 14px; /* Adjust font size as needed */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Add border-radius for rounded corners */
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+.newsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.viewButton:hover {
-  background-color: #2980b9; /* Change background color on hover */
+.newsCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Display cards in a column */
+  align-items: center; /* Center content horizontally */
 }
 
-.logo {
-  font-family: "Arial", sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  color: #fff;
-  margin-left: 20px;
-  text-transform: uppercase;
+.newsCard h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.newsCard p {
+  margin: 5px 0;
 }

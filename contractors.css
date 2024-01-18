@@ -1,0 +1,120 @@
+body,
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+header {
+  background-color: #636060;
+  color: #fff;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5em;
+  width: 100px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #636060;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.leftFooter p {
+  margin: 0;
+}
+
+.rightFooter {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+.social-icon img {
+  width: 20px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 70px; /* Adjust margin-top based on your header height */
+  margin-bottom: 20px;
+}
+
+.contractorCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 15px;
+  width: calc(33.33% - 30px);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contractorInfo {
+  text-align: center;
+}
+
+.contractorInfo h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contractorInfo p {
+  margin: 5px 0;
+}
